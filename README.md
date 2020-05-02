@@ -1,6 +1,9 @@
 # BMI088
 Arduino library for communicating with the [BMI088](https://www.bosch-sensortec.com/bst/products/all_products/bmi088_1) six-axis Inertial Measurement Unit (IMU).
 
+# License
+This library is licensed under the GPLV3. Please contact us at [support@bolderflight.com](mailto:support@bolderflight.com) to obtain other licenses.
+
 # Description
 The Bosch Sensortec [BMI088](https://www.bosch-sensortec.com/bst/products/all_products/bmi088_1) is a high performance six-axis inertial measurement unit (IMU) featuring a high vibration robustness and specifically designed for use in drones and robotics. BMI088 is specifically designed to effectively suppress vibrations that could occur due to resonances on the pcb or the structure of the total system. Apart from high vibration robustness, the excellent temperature stability of BMI088 helps improve estimation filter performance and the IMU features an exceptionally wide 24G accelerometer range.
 
