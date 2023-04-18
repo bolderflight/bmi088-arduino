@@ -81,6 +81,7 @@ class Bmi088Accel {
     bool mapDrdyInt2(bool enable);
     bool getDrdyStatus();
     void readSensor();
+    void getSensorRawValues(int16_t* accelX, int16_t* accelY, int16_t* accelZ);
     float getAccelX_mss();
     float getAccelY_mss();
     float getAccelZ_mss();
@@ -177,6 +178,7 @@ class Bmi088Accel {
     // accel full scale range
     float accel_range_mss;
     // accel data
+    int16_t accel[3];
     float accel_mss[3];
     // temperature data
     float temp_c;
@@ -242,6 +244,7 @@ class Bmi088Gyro {
     bool mapDrdyInt4(bool enable);
     bool getDrdyStatus();
     void readSensor();
+    void getSensorRawValues(int16_t* gyroX, int16_t* gyroY, int16_t* gyroZ);
     float getGyroX_rads();
     float getGyroY_rads();
     float getGyroZ_rads();
@@ -314,6 +317,7 @@ class Bmi088Gyro {
     // gyro full scale range
     float gyro_range_rads;
     // gyro data
+    int16_t gyro[3];
     float gyro_rads[3];
     // self test
     bool selfTest();
@@ -375,6 +379,7 @@ class Bmi088 {
     bool mapSync(SyncPin pin);    
     bool pinModeDrdy(PinMode mode, PinLevel level);
     void readSensor();
+    void getSensorRawValues(int16_t* accelX, int16_t* accelY, int16_t* accelZ, int16_t* gyroX, int16_t* gyroY, int16_t* gyroZ);
     float getAccelX_mss();
     float getAccelY_mss();
     float getAccelZ_mss();
